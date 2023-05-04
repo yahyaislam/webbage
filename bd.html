@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basse</title>
+    <link rel="stylesheet" href="bd.css">
+</head>
+<body>
+    <div class="s">
+      <div class="h">
+         <h2>crud</h2>
+         <p>PRODUCT MANAGEMENT SYSTEM</p>
+      </div>
+      <div class="input">
+         <input type="text"  placeholder="title" id="t">
+        <div class="m"> <input onkeyup="tot()" type="number" placeholder="prix" id="p">
+                        <input onkeyup="tot()" type="number" placeholder="taxes" id="x">
+                        <input onkeyup="tot()" type="number" placeholder="ads" id="a">
+                        <input onkeyup="tot()" type="number" placeholder="discount" id="d">
+                        <small id="l"></small>
+                    </div>
+         <input type="number" placeholder="count" id="c">
+          <input type="text" placeholder="category" id="g">
+          <button id="e">create</button>
+
+      </div>
+     <div class="output">
+      
+        <input onkeyup="yah(this.value)" type="text" id="search" placeholder="search">
+        <div class="bu">
+               <button onclick="sear(this.id)" id="tital">Search By Tital</button>
+                 <button onclick="sear(this.id)" id="categ">Search By category</button>
+            </div>
+      <div id="all">
+
+      </div>
+      <table>
+            <tr>
+               <th>ID</th>
+               <th>TITLE</th>
+               <th>PRIX</th>
+               <th>taxes</th>
+               <th>ads</th>
+               <th>discount</th>
+               <th>total</th>
+               <th>count</th>
+               <th>category</th>
+               <th>update</th>
+               <th>delete</th>
+             </tr>
+        <tbody id="tbody">
+      
+        
+        </tbody>
+     </table>
+     </div>
+
+     <script src="bd.js"></script>
+    </div>
+</body>
+</html>
